@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- <h1 id="description">Show English Text</h1> -->
+
+  <title>Hyperchip Technology</title>
+  <meta content="杭州海启软件科技有限公司 Hyperchip Technology" name="description">
+
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/h-touch-icon.png" rel="icon">
+  <link href="assets/img/h-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Hyperchip Technology - v1.11.1
+  * Template URL: https://bootstrapmade.com/Hyperchip Technology-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+  /* * Wechat display popup modal
+  */
+
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+    #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    #myImg:hover {opacity: 0.7;}
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+    
+    /* Modal Content (image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+    
+    /* Caption of Modal Image */
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+    
+    /* Add Animation */
+    .modal-content, #caption {  
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+    
+    @-webkit-keyframes zoom {
+      from {-webkit-transform:scale(0)} 
+      to {-webkit-transform:scale(1)}
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0)} 
+      to {transform:scale(1)}
+    }
+    
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+      .modal-content {
+        width: 100%;
+      }
+    }
+    </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo1-3.jpg.png" alt="" text="cn">
+        <img src="assets/img/logo.png" alt="" text="en">
+        <span></span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+
+          
+          <!-- <p>
+              <span lang="ko">한국어 텍스트</span>
+              <span lang="en">Text in English</span>
+          </p> -->
+          <li class="container">
+            <!-- <h1 id="description">Show English Text</h1> -->
+             <div class="dropdown" text="en">
+              <button class="btn btn-default dropdown-toggle"onclick="toggleLanguage('Chinese')" type="button" data-toggle="dropdown"><img src="assets/img/en-flag.png" alt="" style="margin-right: 15px;width:20px">Language
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li onclick="toggleLanguage('English')"><a href="#">English</a></li>
+                <li onclick="toggleLanguage('Chinese')"><a href="#">中文</a></li>
+              </ul>
+            </div>
+            <div class="dropdown" text="cn">
+              <button class="btn btn-default dropdown-toggle"onclick="toggleLanguage('English')" type="button" data-toggle="dropdown"><img src="assets/img/cn-flag.png" alt="" style="margin-right: 15px;width:20px">语言
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu ">
+                <li onclick="toggleLanguage('English')"><a href="#">English</a></li>
+                <li onclick="toggleLanguage('Chinese')"><a href="#">中文</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="nav-link scrollto active" href="#hero" text="en">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#hero" text="cn">首页</a></li>
+          <li><a class="nav-link scrollto" href="#about" text="en">About</a></li>
+          <li><a class="nav-link scrollto" href="#about" text="cn">关于我们</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
+          <li><a class="nav-link scrollto" href="#team" text="en">Team</a></li>
+          <li><a class="nav-link scrollto" href="#team" text="cn">团队</a></li>
+          <!-- <li><a href="blog.html">Blog</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a> -->
+            <!-- <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+          <li><a class="getstarted scrollto" href="#contact" text="en">Contact Us</a></li>
+          <li><a class="getstarted scrollto" href="#contact" text="cn">联系我们</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up" text="en">We offer modern Artificial Intelligence (AI) solutions to improve your productivity</h1>
+          <h1 data-aos="fade-up" text="cn">我们提供现代人工智能解决方案，以提高您的工作效率</h1>
+          <h2 data-aos="fade-up" text="en" data-aos-delay="400">We are team of talented engineers who are highly skilled in AI and Computer Vision</h2>
+          <h2 data-aos="fade-up" text="cn" data-aos-delay="400">我们是一支在人工智能和计算机视觉方面具有高度技能的天才工程师团队</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span text="en">About Us</span>
+                <span text="cn">关于我们</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img text="en" src="assets/img/logo1-2.png" class="img-fluid" alt="">
+          <img text="cn" src="assets/img/logo1-4.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3 text="en">Who We Are</h3>
+              <h3 text="cn">我们是谁</h3>
+              <h2 text="en">Hyperchip Technology</h2>
+              <h2 text="cn">海启软件科技 Hyperchip Technology</h2>
+              <div text="en">
+              <p >
+                is focused on the core mission of providing a value for money and highly effective service to our customers while promoting the use of AI (Artificial Intelligence) in  organizations around the world. We are a multicultural team from top Chinese universities that wants to help organizations discover and reap the benefits of incorporating AI systems. Join us to explore the world of AI</p>
+              <p >Our services are:</p>
+                <ul style="list-style-type:none;">
+                  <li><i class="bi bi-chevron-right"></i> <a >Algorithm Research</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a >Pose Estimation</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a >Image Processing</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a >Website Design</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a >Service Application</a></li>
+                </ul>
+                <div id="extra_en" style="display:none">
+                <p>Hangzhou Hyperchip Software Technology Co., Ltd. was founded in 2022 by a team of talented engineers from top Chinese universities working and conducting research in the AI industry. Our vision is to develop the Artificial Intelligence market by providing useful resources that help companies increase their productivity and save both time and money thanks to our team's expertise.</p>
+                <p>Our biggest advantage is our multicultural international team (5 nationalities from 3 different continents), with rich and various educational backgrounds. Our target market is international. Here in China, we understand the local and cultural differences in the software development industry. We aim to look for cooperation with different firms that aim to globalize and internationalize their existing products and solutions. We can also export existing products and standardize them for the international market.</p>
+                <p>Hyperchip Technology consists of a team of  talented engineers who are highly skilled in Artificial Intelligence (AI) and Computer Vision, we specialize in providing  modern AI solutions to help companies and governments. Our team also  includes DevOps engineers who can deploy  our solutions on the web, through a website or mobile application.</p>
+                <p>Delivering high quality products and providing high quality service is our top priority</p>
+                </div>
+              </div>
+              <div text="cn">
+              <p >
+                专注于为客户提供物超所值和高效服务的核心使命，同时促进世界各地组织使用AI（人工智能）。我们是一个来自中国顶尖大学的多元文化团队，希望帮助组织发现并获得融入人工智能系统的好处。加入我们探索人工智能世界</p>
+                <p >我们的服务包括：</p>
+                <ul style="list-style-type:none;">
+                  <li><i class="bi bi-chevron-right"></i> <a >算法研究</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a >姿势估计</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a >图像处理</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a >网站设计</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a >服务应用程序</a></li>
+                </ul>
+                <div id="extra_cn" style="display:none">
+                <p>杭州海启软件技术有限公司（Hyperchip Technology）成立于2022年，由一群来自中国顶尖大学的优秀工程师组成，均在人工智能行业从事研究工作，该团队的愿景是通过提供有用的资源来开发人工智能市场，帮助企业提高员工生产力，同时利用团队的专业知识和多元文化背景提供节约成本的解决方案。
+                </p>
+                <p>Hyperchip Technology的目标是国际市场，最大的优势是多元文化，团队拥有超过3大洲和5个国家的背景。Hyperchip Technology了解软件开发行业的本地和文化差异，寻求与不同公司的合作，这些公司旨在使其现有产品和解决方案全球化和国际化。还可以出口现有产品，并将其标准化以面向国际市场。</p>
+                <p>Hyperchip Technology由一支在人工智能（AI）和计算机视觉方面具有高度技能的天才工程师团队组成，Hyperchip Technology专门为组织提供现代人工智能解决方案，以实现生产力的最大化。Hyperchip Technology还提供网络设计、网络开发和图形设计服务，使组织能够提高其在线影响力和可达性。Hyperchip Technology高度推广在组织环境中使用人工智能，旨在通过姿势估计和行为分析等领域的有效解决方案提高生产力并提高客户的整体效率。
+                </p>
+                <p>提供高质量的产品和高质量的服务是我们的首要任务。</p>
+                </div>
+              </div>
+              <div class="text-center text-lg-start" text="cn" onclick="toggleExtra('Chinese')">
+                <a href="#about" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span >更多</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <div class="text-center text-lg-start" text="en" onclick="toggleExtra('English')">
+                <a href="#about" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span >Read More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Values Section ======= -->
+    <section id="values" class="values">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2 text="en">Technical Highlights</h2>
+          <h2 text="cn">技术亮点</h2>
+          <p text="en">Extensive research and development experience</p>
+          <p text="cn">我们有丰富的研发经验</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <img src="assets/img/values-1.png" class="img-fluid" alt="">
+              <h3 text="en">Animal Behaviour Analysis</h3>
+              <h3 text="cn">动物行为分析</h3>
+              <p text="en"> We have extensive research and development experience in the area of pose estimation, computer vision and image processing.
+              <p text="en"> Animal Pose estimation refers to the way we can detect the pose of the animal and analyze it. Animal pose estimation plays an essential role in learning and understanding animal behavior. Observing and efficiently describing behavior is a core tenant of modern ethology, neuroscience, medicine, and technology with endless applications in the field of security, surveillance, intrusion detection, and other video analytics.</p> 
+              <p text="en"> This technology can also be adapted for various use-cases such as human pose estimation, which can help detect different security risks:</p> 
+                <ul>
+                  <li text="en"> 
+                    Fighting people
+                  </li>
+                  <li text="en"> 
+                    Falling people
+                  </li>
+                  <li text="en"> 
+                    Thiefs 
+                  </li>
+                  <li text="en"> 
+                    Sick people 
+                  </li>
+                </ul>
+             
+              </p>
+              <p text="cn">Hyperchip Technology在姿态估计、计算机视觉和图像处理领域拥有丰富的研发经验。动物姿势估计是指Hyperchip Technology的技术可以检测动物的姿势、其特征，然后对其进行分析的方法。该技术还可以用于各种不同的用例，例如：
+              </p>
+              </p>
+              <ul>
+                <li text="cn"> 
+                  人类姿势预估和检测不同的安全相关风险
+                </li>
+                <li text="cn"> 
+                  人们将要开始战斗或者因事故或心力衰竭等摔倒
+                </li>
+                <li text="cn"> 
+                  所处在在未经授权的危险区域等
+                </li>
+              </ul>
+           
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <img src="assets/img/values-2.png" class="img-fluid" alt="">
+              <h3 text="en">Research situation and development tendency</h3>
+              <h3 text="cn">研究现状及发展趋势</h3>
+              <p text="en">We can provide different solutions based on the customer's needs.</p>
+              <p text="en">
+                If you have an urgent and simple need, we will help you find the state-of-the-art algorithm or application to solve your problem, and we will adapt them to your special case and working environment.</p>
+              <p text="en">If you want to improve an existing AI service, or need something completely new, then we can perform R&D (algorithm optimization or design) to create a custom-made solution.
+              <p text="en">
+                The force of our team is to have a mix between people with an experience in the industry (to better understand your needs) and people with a large experience in AI research (to provide state-of-the-art solutions).</p>
+              <p text="cn">Hyperchip Technology可以根据客户的需求提供不同的解决方案。如果客户要求应用程序提供简单的解决方案，该技术可以利用现有算法并提供算法工程解决方案。如果客户希望改进现有服务，Hyperchip Technology可以通过阅读几篇论文，然后提出最新和最有效的解决方案，来研究最先进的服务。由于Hyperchip Technology的团队拥有不同的实际行业经验和研究经验，该公司涵盖了业务应用和解决方案的不同阶段。</p>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+            <div class="box">
+              <img src="assets/img/values-3.png" class="img-fluid" alt="">
+              <h3 text="en">Near-term work scenarios and expected contributions</h3>
+              <h3 text="cn">近期工作设想和预期贡献</h3>
+              <p text="en">To collaborate in Image processing, pose estimation and image segmentation research and development.</p>
+              <strong text="en" >Project Requirements</strong>
+              <p text="en">Since we are now a small team, we would like to start with small-scale  r&d projects before moving on towards bigger projects, due to time limitations. We are looking for:</p>
+              <ul>
+                <li text="en"> 
+                  Investment cooperation
+                </li>
+                <li text="en"> 
+                  Resource cooperation
+                </li>
+                <li text="en"> 
+                  Team cooperation
+                </li>
+
+              </ul>
+              <p text="cn">在图像处理、姿态估计和图像分割研究与开发方面进行合作</p>
+              <strong text="cn" >项目需求</strong>
+              <p text="cn">由于团队规模较小和时间方面的限制，Hyperchip Technology想先从小规模的研发项目开始，然后再转向更大的项目。Hyperchip Technology正在寻找：</p>
+              <ul>
+                <li text="cn"> 
+                  投资合作
+                </li>
+                <li text="cn"> 
+                  资源合作
+                </li>
+                <li text="cn"> 
+                  团队合作
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- End Values Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <!-- <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Projects</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-headset" style="color: #15be56;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Hours Of Support</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-people" style="color: #bb0852;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Hard Workers</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Counts Section -->
+
+    <!-- ======= Features Section ======= -->
+    <!-- <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Features</h2>
+          <p>Laboriosam et omnis fuga quis dolor direda fara</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <img src="assets/img/features.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Eos aspernatur rem</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Facilis neque ipsa</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Volup amet voluptas</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Rerum omnis sint</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Alias possimus</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Repellendus mollitia</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>  -->
+        <!-- / row -->
+
+        <!-- Feature Tabs -->
+        <!-- <div class="row feture-tabs" data-aos="fade-up">
+          <div class="col-lg-6">
+            <h3>Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</h3> -->
+
+            <!-- Tabs -->
+            <!-- <ul class="nav nav-pills mb-3">
+              <li>
+                <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Saepe fuga</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab2">Voluptates</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab3">Corrupti</a>
+              </li>
+            </ul> -->
+            <!-- End Tabs -->
+
+            <!-- Tab Content -->
+            <!-- <div class="tab-content">
+
+              <div class="tab-pane fade show active" id="tab1">
+                <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                </div>
+                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                </div>
+                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+              </div> -->
+              <!-- End Tab 1 Content -->
+<!-- 
+              <div class="tab-pane fade show" id="tab2">
+                <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                </div>
+                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                </div>
+                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+              </div> -->
+              <!-- End Tab 2 Content -->
+<!-- 
+              <div class="tab-pane fade show" id="tab3">
+                <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                </div>
+                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                </div>
+                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+              </div> -->
+              <!-- End Tab 3 Content -->
+
+            <!-- </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/features-2.png" class="img-fluid" alt="">
+          </div>
+
+        </div> -->
+        <!-- End Feature Tabs -->
+
+        <!-- Feature Icons -->
+        <!-- <div class="row feature-icons" data-aos="fade-up">
+          <h3>Ratione mollitia eos ab laudantium rerum beatae quo</h3>
+
+          <div class="row">
+
+            <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+              <img src="assets/img/features-3.png" class="img-fluid p-4" alt="">
+            </div>
+
+            <div class="col-xl-8 d-flex content">
+              <div class="row align-self-center gy-4">
+
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-line-chart-line"></i>
+                  <div>
+                    <h4>Corporis voluptates sit</h4>
+                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="ri-stack-line"></i>
+                  <div>
+                    <h4>Ullamco laboris nisi</h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="ri-brush-4-line"></i>
+                  <div>
+                    <h4>Labore consequatur</h4>
+                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="ri-magic-line"></i>
+                  <div>
+                    <h4>Beatae veritatis</h4>
+                    <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="ri-command-line"></i>
+                  <div>
+                    <h4>Molestiae dolor</h4>
+                    <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                  <i class="ri-radar-line"></i>
+                  <div>
+                    <h4>Explicabo consectetur</h4>
+                    <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div> -->
+        <!-- End Feature Icons -->
+
+      <!-- </div>
+
+    </section> -->
+    <!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <!-- <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Services</h2>
+          <p>Veritatis et dolores facere numquam et praesentium</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Nesciunt Mete</h3>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Eosle Commodi</h3>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Ledo Markt</h3>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box red">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Asperiores Commodi</h3>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box purple">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Velit Doloremque.</h3>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-box pink">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Dolori Architecto</h3>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- End Services Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <!-- <section id="pricing" class="pricing">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Pricing</h2>
+          <p>Check our Pricing</p>
+        </header>
+
+        <div class="row gy-4" data-aos="fade-left">
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <h3 style="color: #07d5c0;">Free Plan</h3>
+              <div class="price"><sup>$</sup>0<span> / mo</span></div>
+              <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box">
+              <span class="featured">Featured</span>
+              <h3 style="color: #65c600;">Starter Plan</h3>
+              <div class="price"><sup>$</sup>19<span> / mo</span></div>
+              <img src="assets/img/pricing-starter.png" class="img-fluid" alt="">
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="box">
+              <h3 style="color: #ff901c;">Business Plan</h3>
+              <div class="price"><sup>$</sup>29<span> / mo</span></div>
+              <img src="assets/img/pricing-business.png" class="img-fluid" alt="">
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="box">
+              <h3 style="color: #ff0071;">Ultimate Plan</h3>
+              <div class="price"><sup>$</sup>49<span> / mo</span></div>
+              <img src="assets/img/pricing-ultimate.png" class="img-fluid" alt="">
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- End Pricing Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <!-- <section id="faq" class="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>F.A.Q</h2>
+          <p>Frequently Asked Questions</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6"> -->
+            <!-- F.A.Q List 1-->
+            <!-- <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    Non consectetur a erat nam at lectus urna duis?
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                  </button>
+                </h2>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6"> -->
+
+            <!-- F.A.Q List 2-->
+            <!-- <div class="accordion accordion-flush" id="faqlist2">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                  </button>
+                </h2>
+                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                  </button>
+                </h2>
+                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                    Varius vel pharetra vel turpis nunc eget lorem dolor?
+                  </button>
+                </h2>
+                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- End F.A.Q Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <!-- <section id="portfolio" class="portfolio">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Portfolio</h2>
+          <p>Check our latest work</p>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <!-- <section id="testimonials" class="testimonials">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Testimonials</h2>
+          <p>What they are saying about us</p>
+        </header>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+<!-- 
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+<!-- 
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+
+          <!-- </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2 text="en">Team</h2>
+          <h2 text="cn">团队</h2>
+          <p text="en">Our hard working team</p>
+          <p text="cn">我们的团队</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a> -->
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="" src="assets\img\amir-wechat.jpg">
+                    <div id="caption" text="en">Use Wechat to scan QR code</div>
+                    <div id="caption" text="cn">请使用微信扫二维码</div>
+                  </div>
+                  <img id="myImg" class="bi bi-instagram" src="assets\img\wechat.png" alt="Use Wechat to scan QR code" style="margin-top:15px;width:20.44px;height:20.44px;max-width:90px;">
+                  <!-- <a href=""><i class="bi bi-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/0amir/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Shahrukh Amir</h4>
+                <span text="en">Chief Executive Officer</span>
+                <span text="cn">CEO</span>
+                <p text="en">With a double master's degree from Zhejiang University and the University of Leeds, he has studied and worked in China for ten years. He was the product manager of PowerChina Huadong, one of the world's top 500 enterprises.</p>
+                <p text="cn">浙江大学、英国利兹大学双硕士,  十年在华学习、工作经历，曾为世界五百强企业之中国电建华东勘测设计院产品经理.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <!--<a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>-->
+                  <a href="https://www.linkedin.com/in/thibault-jacquemin-a497b649/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Thibault Jacquemin</h4>
+                <span>Product Manager</span>
+                <p text="en">With a double master's degree from the top French and Chinese universities (Ecole Centrale and Tsinghua University), he has a rich experience in the industrial world, is now an Artificial Intelligence freelance worker who joined Shahrukh Amir when Hyperchip was created.</p>
+                <p text="cn">清华大学硕士，图像处理方向.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Snawar Hussain</h4>
+                <span>CTO</span>
+                <p text="en">Doctor of Zhejiang University, National Second Prize of "Baidu 2020 Artificial Intelligence Creative Competition", image processing direction.</p>
+                <p text="cn">浙江大学博士，“百度2020人工智能创意赛”全国二等奖，图像处理方向.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Esala Nuwan Arachchi</h4>
+                <span text="en">Vice President</span>
+                <span text="cn">副总裁 </span>
+                <p text="en">Masters degree from Chongqing University, Specialized in Project Management, Contract Management and Marketing.</p>
+                <p text="cn">重庆大学硕士，土木工程管理方向.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Team Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2 text="en">Our Clients</h2>
+          <h2 text="cn">合作伙伴</h2>
+          <p text="en">Meet our partners</p>
+          <p text="cn">我们的合作伙伴</p>
+        </header>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+          <!-- ======= We will partner with these two in the future ======= -->
+            <!-- <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div> -->
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section>
+    <!-- End Clients Section -->
+
+    <!-- ======= Recent Blog Posts Section ======= -->
+    <!-- <section id="recent-blog-posts" class="recent-blog-posts">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Blog</h2>
+          <p>Recent posts form our Blog</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
+              <span class="post-date">Tue, September 15</span>
+              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
+              <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
+              <span class="post-date">Fri, August 28</span>
+              <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
+              <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
+              <span class="post-date">Mon, July 11</span>
+              <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
+              <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- End Recent Blog Posts Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2 text="en"e>Contact</h2>
+          <h2 text="cn"e>联系</h2>
+          <p text="en">Contact Us</p>
+          <p text="cn">联系我们</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <!--<div class="col-lg-6"> -->
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3 text="en">Address</h3>
+                  <h3 text="cn">地址</h3>
+                  <p text="en">Hangzhou International Talents Entrepreneurship & Innovation Park,<br> Room 1012, 10th Floor, Building 1, No. 171, Xiangyuan Road</p>
+                  <p text="cn">杭州国际人才创业创新园祥园路171号1幢10楼1012室</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3 text="en">Call Us</h3>
+                  <h3 text="cn">联系我们</h3>
+                  <p> +86 158 6842 0294<br> +86 130 6770 6024</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3 text="en">Email Us</h3>
+                  <h3 text="cn">邮件</h3>
+                  <p>amir_sh@outlook.my<br></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3 text="en">Open Hours</h3>
+                  <h3 text="cn">时间</h3>
+                  <p text="en">Monday - Friday<br>9:00AM - 05:00PM</p>
+                  <p text="cn">星期一 到 星期五<br>9:00 - 17:00</p>
+                </div>
+              </div>
+            </div>
+
+         <!-- </div> -->
+          
+          <!--
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+          -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <!-- <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="" text="en">
+              <img src="assets/img/logo1-3.jpg.png" alt="" text="cn">
+              <span></span>
+            </a>
+            <p text="en">Hangzhou Hyperchip Software Technology Co., Ltd. was founded in 2022 and headquartered in Hangzhou, commenced operations as a software company, focusing on research and development of AI</p>
+            <p text="cn">Hyperchip Technology 杭州海启软件科技有限公司成立于2022年，总部位于杭州。起源是主营软件服务业务。核心战略是成为一家国际人工智能的研发和咨询公司</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4 text="en">Follow Us on Wechat</h4>
+            <h4 text="cn">关注我们公众号</h4>
+            <img class="" id="" src="assets\img\amir-wechat.jpg" style="width:130px">
+            <!-- 
+            <ul>
+
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul> -->
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4 text="en">Our Services</h4>
+            <h4 text="cn">我们提供的服务</h4>
+            <ul text="en">
+              <li><i class="bi bi-chevron-right"></i> <a >Algorithm Research</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a >Pose Estimation</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a >Image Processing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a >Website Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a >Service Application</a></li>
+            </ul>
+            <ul text="cn">
+              <li><i class="bi bi-chevron-right"></i> <a >算法研究</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a >姿势估计</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a >图像处理</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a >网站设计</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a >服务应用程序</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4 text="en">Contact Us</h4>
+            <h4 text="cn">联系我们</h4>
+            <p text="cn">
+              杭州国际人才创业创新园祥园路171号1幢10楼1012室<br><br>
+              <strong>电话:</strong> +86 158 6842 0294<br>
+              <strong>邮件:</strong> amir_sh@outlook.my<br>
+
+            </p>
+            <p text="en">
+              Hangzhou International Talents Entrepreneurship & Innovation Park, <br>
+              Room 1012, 10th Floor, Building 1, No. 171, Xiangyuan Road<br>
+              Hangzhou, China <br><br>
+              <strong>Phone:</strong> +86 158 6842 0294<br>
+              <strong>Email:</strong> amir_sh@outlook.my<br>
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright" text="en">
+        &copy; Copyright <strong><span >Hyperchip Technology</span></strong>. All Rights Reserved
+      </div>
+      <div class="copyright" text="cn">
+        ©版权所有 <strong><span text="cn">Hyperchip Technology</span></strong> 保留所有权利
+      </div>
+
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Hyperchip Technology-bootstrap-startup-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+      <!-- Wechat QR code pop-up -->
+  <script>
+    
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var weChatlogo = document.getElementById("weChat");
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  
+  <script>function toggleLanguage(language) {
+    $('[text="cn"]').hide(); // hide all lang attributes on start.
+    $('[text="en"]').show(); // show just Korean text (you can change it)
+    $('#text-switch').change(function () { // put onchange event when user select option from select
+        var text = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
+        
+        switch (text) {
+            case 'en':
+                $('[text]').hide();
+                $('[text="en"]').show();
+            break;
+            case 'cn':
+                $('[text]').hide();
+                $('[text="cn"]').show();
+            break;
+            default:
+                $('[text]').hide();
+                $('[text="cn"]').show();
+            }
+         
+    });
+  }
+    </script>
+    <script>
+      function toggleExtra(language){ //This function is for the "Read More" button, it toggles more text on the page. If the function carries "en" it means English, if it passes "cn" it means Chinese
+      var text = language;
+      // window.alert(language);
+
+       // decide which language to display using switch case. The rest is obvious (i think)
+        
+        switch (text) {
+            case 'English':
+                var x = document.getElementById("extra_en"); 
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                 x.style.display = "none";
+               }
+            break;
+            case 'Chinese':
+                var x = document.getElementById("extra_cn"); 
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                x.style.display = "none";
+                }
+            break;
+            default:     
+            }
+      }
+    </script>
+    <script>
+
+      var usrlang = navigator.language 
+      //Check to see what the preferred language of the browser is, then set accordingly 
+      if (usrlang === "zh" || usrlang === "zh-Hans"|| usrlang === "zh-CN") {
+          $('[text]').hide(); //init in chinese
+          $('[text="cn"]').show();
+      }else{
+          $('[text]').hide();
+          $('[text="en"]').show();
+      }
+
+      function toggleLanguage(language) {
+        let description = document.getElementById("description");
+        if (language === "Chinese") {
+             $('[text]').hide();
+             $('[text="cn"]').show();
+        }
+        else {
+             $('[text]').hide();
+             $('[text="en"]').show();
+        }
+      }
+    </script>
+
+</body>
+
+</html>
